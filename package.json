@@ -1,0 +1,59 @@
+{
+    "name": "rn-login-with-instagram",
+    "version": "0.0.1",
+    "description": "Simple package for implementing login with Instagram on React Native",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "files": [
+      "index,tsx"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Allmacamo/rn-login-with-instagram"
+    },
+    "keywords": [
+      "instagram",
+      "login",
+      "auth"
+    ],
+    "author": "Alain Macamo",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Allmacamo/rn-login-with-instagram/issues"
+    },
+    "homepage": "https://github.com/Allmacamo/rn-login-with-instagram#readme",
+    "dependencies": {
+      "axios": "^0.21.1"
+    },
+    "peerDependencies": {
+      "react-native-webview": "^11.6.2"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/commit-analyzer": "^8.0.1",
+        "@semantic-release/git": "^9.0.0",
+        "@semantic-release/npm": "^7.0.10",
+        "@semantic-release/release-notes-generator": "^9.0.1",
+        "@types/jest": "^25.2.3",
+        "eslint": "^6.5.1",
+        "semantic-release": "^17.3.7"
+      },
+    "release": {
+        "branches": [
+          "develop"
+        ],
+        "plugins": [
+          "@semantic-release/commit-analyzer",
+          "@semantic-release/release-notes-generator",
+          "@semantic-release/changelog",
+          [
+            "@semantic-release/npm",
+            {
+              "npmPublish": false
+            }
+          ],
+          "@semantic-release/git"
+        ]
+      }
+  }
