@@ -16,6 +16,19 @@ type Props = {
   cancelButtonBackgroundColor?: string;
 };
 
+/**
+ * Login with instagram on React Native
+ * @param appId app id
+ * @param appSecret app secret
+ * @param redirectUrl redirect url
+ * @param isVisisble whether to show the login or not
+ * @param onCancel cancel instgram login
+ * @param onSuccess after login success, returns a token
+ * @param onError when there is a error during login
+ * @param cancelText text to display, default cancel
+ * @param cancelTextColor color of the cancel text, default white
+ * @param cancelButtonBackgroundColor background color of the cancel button, default redisn
+ */
 const LoginWithInstagram = ({
   isVisisble,
   appId,
